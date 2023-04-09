@@ -1,0 +1,127 @@
+@import "./reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+
+
+html {
+    position: relative;
+    font-family: 'Lilita One', cursive;
+    position: relative;
+}
+
+.header {
+    justify-content: space-between;
+    padding: 30px;
+    background-image: url(/img/wall.png);
+}
+
+.container-memory-game {
+    background: linear-gradient(#feed00, #fecb02);
+}
+
+.nav {
+    display: flex;
+    justify-content: end;
+    padding-right: 40px;
+    padding-top: 20px;
+    margin-top: 0;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-left: 100px;
+    padding-right: 50px;
+}
+
+.header-heading {
+    display: flex;
+    align-items: center;
+    color: black;
+    margin: 10px;
+    font-size: 65px;
+    padding-left: 30px;
+    padding-right: 50px;
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.memory-game-field {
+    width: 600px;
+    height: 600px;
+    margin: 20px;
+
+    display: flex;
+    flex-flow: row wrap;
+
+    perspective: 1000px;
+}
+
+.memory-card {
+    width: calc(25% - 5px);
+    height: calc(25% - 5px);
+    transform: scale(1);
+    position: relative;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+.memory-card.flip {
+    transform: rotateY(180deg);
+}
+
+.memory-card:active {
+    transform: scale(0.97);
+    transition: transform 0.2s;
+}
+
+.front-face, 
+.back-face {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    position: absolute;
+    border-radius: 7px;
+    backface-visibility: hidden;
+}
+
+.front-face {
+    transform: rotateY(180deg);
+}
+
+.memory-game {
+    display: flex;
+    flex-direction: row;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.title, .description {
+    text-align: center;
+}
+
+.title {
+    padding-top: 20px;
+    font-size: 45px;
+    color: black;
+}
+
+.description {
+    margin: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 25px;
+    color: #11212F;
+}
