@@ -1,1 +1,1 @@
-# Naruto-Memory-Game
+## WELCOME TO THE NARUTO GAME, DATTEBAYO!

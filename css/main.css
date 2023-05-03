@@ -8,15 +8,10 @@ html {
     position: relative;
 }
 
-.header {
-    justify-content: space-between;
-    padding: 30px;
+body {
     background-image: url(/img/wall.png);
 }
 
-.container-memory-game {
-    background: linear-gradient(#feed00, #fecb02);
-}
 
 .nav {
     display: flex;
@@ -24,6 +19,16 @@ html {
     padding-right: 40px;
     padding-top: 20px;
     margin-top: 0;
+}
+
+.sound {
+    color: black;
+    background-color: antiquewhite;
+    
+    font-size: 30px;
+    font-weight: bold;
+    height: 35px;
+    width: 35px;
 }
 
 .header-content {
@@ -113,7 +118,6 @@ html {
 }
 
 .title {
-    padding-top: 20px;
     font-size: 45px;
     color: black;
 }

@@ -55,3 +55,21 @@ cards.forEach((card) => {
     const randomIndex = Math.floor(Math.random() * cards.length);
     card.style.order = randomIndex;
 });
+
+const soundClick = () => {
+    const soundButton = document.querySelector('.sound');
+    const audio = new Audio('./Toshiro Masuda - Naruto Main Theme.mp3');
+    let state = false;
+    
+    soundButton.addEventListener('click', () => {
+        if (state) {
+            audio.pause();
+            state = !state;
+        } else {
+            audio.play();
+            state = !state;
+        }
+    })
+}
+
+soundClick();
