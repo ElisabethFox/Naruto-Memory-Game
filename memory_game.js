@@ -59,7 +59,7 @@ cards.forEach((card) => {
 const soundClick = () => {
     const soundButton = document.querySelector('.sound');
     const audio = new Audio('./Toshiro Masuda - Naruto Main Theme.mp3');
-    let state = false;
+    let state = true;
     
     soundButton.addEventListener('click', () => {
         if (state) {
